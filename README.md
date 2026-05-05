@@ -1,4 +1,8 @@
-<img width="190" height="161" alt="image" src="https://github.com/user-attachments/assets/8fb6f0a5-df3b-4452-b280-a6bd2d622d2b" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/8fb6f0a5-df3b-4452-b280-a6bd2d622d2b" width="300"/>
+  <br>
+  <b>Golden Dragon Chinese Restaurant</b>
+</p>
 
 # Chinese Restaurant Website
 
