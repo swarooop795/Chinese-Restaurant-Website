@@ -1,10 +1,8 @@
 <p align="center">
   <img src="https://github.com/user-attachments/assets/8fb6f0a5-df3b-4452-b280-a6bd2d622d2b" width="300"/>
   <br>
-  <b>Golden Dragon Chinese Restaurant</b>
+  <b>Golden Dragon Chinese Restaurant Website</b>
 </p>
-
-# Chinese Restaurant Website
 
 # 1. About the Project
 * The project is a Chinese Restaurant Web Application consisting of a React frontend and Node.js,  Express backend connected with MongoDB database.
