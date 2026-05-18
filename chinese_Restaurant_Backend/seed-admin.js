@@ -7,9 +7,11 @@ const UserSchema = new mongoose.Schema({
   role: { type: String, default: "user" }
 });
 
+const MONGO_URI = process.env.MONGO_URI;
+
 const User = mongoose.model("User", UserSchema, "users");
 
-mongoose.connect("mongodb://127.0.0.1:27017/golden_dragon")
+mongoose.connect(MONGO_URI)
   .then(async () => {
     console.log("✅ MongoDB Connected - Seeding admin");
 
