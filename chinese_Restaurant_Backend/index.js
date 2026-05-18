@@ -10,11 +10,11 @@ app.use(cors());
 app.use(express.json());
 
 const PORT = process.env.PORT || 5000;
-MONGO_URI = mongodb+srv://Swaroop:Swaroop123@cluster0.abcd.mongodb.net/golden_dragon?retryWrites=true&w=majority
+const MONGO_URI = process.env.MONGO_URI;
 const JWT_SECRET = "mySuperSecretKey123";
 
 // ================== DATABASE ==================
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(MONGO_URI)
   .then(() => console.log("MongoDB Connected"))
   .catch(err => console.log(err));
 
