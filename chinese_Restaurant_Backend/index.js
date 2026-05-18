@@ -9,6 +9,11 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// Test route
+app.get("/", (req, res) => {
+  res.send("✅ Chinese Restaurant Backend is Running Successfully");
+});
+
 const PORT = process.env.PORT || 5000;
 const MONGO_URI = process.env.MONGO_URI;
 const JWT_SECRET = "mySuperSecretKey123";
