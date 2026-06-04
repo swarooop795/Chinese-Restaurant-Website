@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const Food = require('./models/Food'); // Will be auto-created from schema
+const Food = require('./models/Food'); 
 
 const MONGO_URI = process.env.MONGO_URI;
 
@@ -107,7 +107,7 @@ mongoose.connect(MONGO_URI)
       },
     ];
 
-    // Clear existing & seed new
+    
     await Food.deleteMany({});
     await Food.insertMany(menuItems);
     
