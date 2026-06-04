@@ -69,7 +69,7 @@ const Order = mongoose.model("Order", OrderSchema);
 const Reservation = mongoose.model("Reservation", ReservationSchema);
 
 
-// Seed menu if empty
+
 Food.countDocuments().then(count => {
   if (count === 0) {
     console.log('🌟 No menu items found. Run: node seed.js');
@@ -121,13 +121,13 @@ app.post("/login", async (req, res) => {
   res.json({ token, user });
 });
 
-// FIXED /profile route - proper formatting
+
 app.get("/profile", authMiddleware, async (req, res) => {
   const user = await User.findById(req.user.id);
   res.json(user);
 });
 
-// ================== ADMIN USERS API ================== FIXED ROUTE!
+// ================== ADMIN USERS API ================== 
 app.get("/users/admin", authMiddleware, async (req, res) => {
   console.log("Users endpoint hit by:", req.user.role);
   if (req.user.role !== 'admin') {
@@ -197,7 +197,7 @@ app.put("/orders/:id/status", authMiddleware, async (req, res) => {
   res.json(order);
 });
 
-// ================== RESERVATION DELETE (ADMIN ONLY) ==================
+// ================== RESERVATION DELETE ==================
 app.delete("/reservation/:id", authMiddleware, async (req, res) => {
   if (req.user.role !== 'admin') {
     return res.status(403).json({ message: "Admin access only" });
