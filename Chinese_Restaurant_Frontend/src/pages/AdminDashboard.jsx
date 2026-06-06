@@ -27,7 +27,7 @@ import PeopleIcon from "@mui/icons-material/People";
 import ReceiptIcon from "@mui/icons-material/Receipt";
 import PaymentsIcon from "@mui/icons-material/Payments";
 import EventIcon from "@mui/icons-material/Event";
-import DeleteIcon from "@mui/icons-material/Delete"; // for reservation delete
+import DeleteIcon from "@mui/icons-material/Delete"; 
 
 import { AuthContext } from "../context/AuthContext";
 import API from "../api/Api.jsx";
