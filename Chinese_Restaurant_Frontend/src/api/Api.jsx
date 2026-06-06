@@ -4,7 +4,7 @@ const API = axios.create({
   baseURL: process.env.REACT_APP_API_URL || "https://chinese-restaurant-website.onrender.com",
 });
 
-// attach token automatically
+
 API.interceptors.request.use((req) => {
   const token = localStorage.getItem("token");
   if (token) {
