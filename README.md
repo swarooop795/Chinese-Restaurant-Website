@@ -7,7 +7,7 @@
 # 1. About the Project
 * The project is a Chinese Restaurant Web Application consisting of a React frontend and Node.js,  Express backend connected with MongoDB database.
 * Users can create accounts, login securely using JWT authentication, explore menu categories, manage carts, checkout orders, and submit reservations & customer reviews.
-* The system includes role based access where Admin users view total users and total revenue, manages the customer orders and update the order status, delete the expired reservations through a dedicated dashboard.
+* The system includes role based access where Admin can view total users, total revenue, manages the customer orders and update the order status, delete the expired reservations through a dedicated dashboard.
 
 # 2. Aim of the Project
 
